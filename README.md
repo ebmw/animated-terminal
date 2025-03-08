@@ -31,7 +31,7 @@ An animated terminal SVG for your GitHub profile README that simulates a command
    ```
       **Looping Animation (runs continuously):**
    ```markdown
-   ![Animated Terminal](https://raw.githubusercontent.com/ebmw/animated-terminal/main/animated-terminal-no-cursor.svg)
+   ![Animated Terminal](https://raw.githubusercontent.com/ebmw/animated-terminal/main/animated-terminal-loop%20.svg)
    ```
 3. Customize the commands and outputs in the SVG to match your information
 
