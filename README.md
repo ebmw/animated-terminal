@@ -6,7 +6,13 @@ An animated terminal SVG for your GitHub profile README that simulates a command
 
 ## Preview
 
-![Animated Terminal](https://raw.githubusercontent.com/ebmw/animated-terminal/refs/heads/main/animated-terminal1.svg)
+
+### Looping Animation
+![Animated Terminal (Looping)](https://raw.githubusercontent.com/ebmw/animated-terminal/main/animated-terminal-loop.svg)
+
+### One-time Playthrough
+![Animated Terminal (One-time)](https://raw.githubusercontent.com/ebmw/animated-terminal/main/animated-terminal1.svg)
+
 
 ## Features
 
@@ -19,8 +25,13 @@ An animated terminal SVG for your GitHub profile README that simulates a command
 
 1. Clone this repository or download the SVG file
 2. Add it to your GitHub README.md using:
+   **one time playthrough**
    ```markdown
-   ![Animated Terminal](https://raw.githubusercontent.com/ebmw/animated-terminal/main/animated-terminal-fixed.svg)
+   ![Animated Terminal](https://raw.githubusercontent.com/ebmw/animated-terminal/main/animated-terminal1.svg)
+   ```
+      **Looping Animation (runs continuously):**
+   ```markdown
+   ![Animated Terminal](https://raw.githubusercontent.com/ebmw/animated-terminal/main/animated-terminal-no-cursor.svg)
    ```
 3. Customize the commands and outputs in the SVG to match your information
 
