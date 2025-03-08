@@ -1,0 +1,324 @@
+<svg width="980" height="620" viewBox="0 0 980 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="Style=Dark, Tabs=False" filter="url(#filter0_d_1_3)">
+    <rect x="10" y="8" width="960" height="600" rx="8" fill="#131313"/>
+    
+    <!-- Terminal Content -->
+    <g id="terminal-content">
+      <style>
+        .prompt { fill: #50fa7b; font-family: 'Monaco', 'Consolas', monospace; font-size: 16px; }
+        .command { fill: #f8f8f2; font-family: 'Monaco', 'Consolas', monospace; font-size: 16px; }
+        .output { fill: #bd93f9; font-family: 'Monaco', 'Consolas', monospace; font-size: 16px; }
+        .cursor {
+          fill: #f8f8f2;
+          animation: blink 1.2s infinite steps(1);
+        }
+        
+        /* Text animation setup */
+        .command, .output {
+          opacity: 0;
+        }
+        
+        /* Command 1 animations */
+        #command1 {
+          animation: typing 1.5s steps(21) 0.5s forwards;
+        }
+        
+        #output1-line1 {
+          animation: appear 0.5s ease-in 2.2s forwards;
+        }
+        
+        /* Command 2 animations */
+        #command2 {
+          animation: typing 1.3s steps(19) 3.0s forwards;
+        }
+        
+        #output2-line1 {
+          animation: appear 0.5s ease-in 4.5s forwards;
+        }
+        
+        /* Command 3 animations */
+        #command3 {
+          animation: typing 0.8s steps(6) 5.3s forwards;
+        }
+        
+        #output3-line1 {
+          animation: appear 0.5s ease-in 6.4s forwards;
+        }
+        
+        /* Command 4 animations */
+        #command4 {
+          animation: typing 1.0s steps(10) 7.2s forwards;
+        }
+        
+        #output4-line1 {
+          animation: appear 0.5s ease-in 8.5s forwards;
+        }
+        
+        /* Command 5 animations */
+        #command5 {
+          animation: typing 1.0s steps(10) 9.3s forwards;
+        }
+        
+        #output5-line1 {
+          animation: appear 0.5s ease-in 10.5s forwards;
+        }
+        
+        /* Command 6 animations */
+        #command6 {
+          animation: typing 0.8s steps(6) 11.3s forwards;
+        }
+        
+        #output6-line1 {
+          animation: appear 0.5s ease-in 12.4s forwards;
+        }
+        
+        /* Cursor animations */
+        #cursor1 {
+          animation: blink 1.2s infinite steps(1), 
+                    cursor-command1 1.5s steps(21) 0.5s forwards,
+                    cursor-hide 0.1s ease-in 2.1s forwards;
+        }
+        
+        #cursor2 {
+          opacity: 0;
+          animation: blink 1.2s infinite steps(1), 
+                    cursor-show 0.1s ease-in 2.7s forwards,
+                    cursor-command2 1.3s steps(19) 3.0s forwards,
+                    cursor-hide 0.1s ease-in 4.4s forwards;
+        }
+        
+        #cursor3 {
+          opacity: 0;
+          animation: blink 1.2s infinite steps(1), 
+                    cursor-show 0.1s ease-in 5.0s forwards,
+                    cursor-command3 0.8s steps(6) 5.3s forwards,
+                    cursor-hide 0.1s ease-in 6.2s forwards;
+        }
+        
+        #cursor4 {
+          opacity: 0;
+          animation: blink 1.2s infinite steps(1), 
+                    cursor-show 0.1s ease-in 6.9s forwards,
+                    cursor-command4 1.0s steps(10) 7.2s forwards,
+                    cursor-hide 0.1s ease-in 8.3s forwards;
+        }
+        
+        #cursor5 {
+          opacity: 0;
+          animation: blink 1.2s infinite steps(1), 
+                    cursor-show 0.1s ease-in 9.0s forwards,
+                    cursor-command5 1.0s steps(10) 9.3s forwards,
+                    cursor-hide 0.1s ease-in 10.4s forwards;
+        }
+        
+        #cursor6 {
+          opacity: 0;
+          animation: blink 1.2s infinite steps(1), 
+                    cursor-show 0.1s ease-in 11.0s forwards,
+                    cursor-command6 0.8s steps(6) 11.3s forwards,
+                    cursor-hide 0.1s ease-in 12.2s forwards;
+        }
+        
+        @keyframes blink {
+          0%, 50% { opacity: 1; }
+          51%, 100% { opacity: 0; }
+        }
+        
+        @keyframes typing {
+          0% { opacity: 0; width: 0; }
+          1% { opacity: 1; width: 0; }
+          100% { opacity: 1; width: 100%; }
+        }
+        
+        @keyframes appear {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+        
+        @keyframes cursor-command1 {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(200px); }
+        }
+        
+        @keyframes cursor-command2 {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(185px); }
+        }
+        
+        @keyframes cursor-command3 {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(65px); }
+        }
+        
+        @keyframes cursor-command4 {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(95px); }
+        }
+        
+        @keyframes cursor-command5 {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(95px); }
+        }
+        
+        @keyframes cursor-command6 {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(65px); }
+        }
+        
+        @keyframes cursor-show {
+          0% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+        
+        @keyframes cursor-hide {
+          0% { opacity: 1; }
+          100% { opacity: 0; }
+        }
+
+        /* Add animation loop for smoother experience */
+        @keyframes restart-animation {
+          0% { opacity: 1; }
+          95% { opacity: 1; }
+          100% { opacity: 1; }
+        }
+      </style>
+      
+      <!-- Command line 1 -->
+      <text class="prompt" x="40" y="100" id="prompt1">ebmw %</text>
+      <text class="command" x="100" y="100" id="command1" clip-path="url(#commandClip1)">initializing system...</text>
+      <defs>
+        <clipPath id="commandClip1">
+          <rect x="100" y="85" width="1000" height="20" />
+        </clipPath>
+      </defs>
+      
+      <!-- Output for command 1 -->
+      <text class="output" x="320" y="100" id="output1-line1">✅</text>
+      
+      <!-- Command line 2 -->
+      <text class="prompt" x="40" y="140" id="prompt2">ebmw %</text>
+      <text class="command" x="100" y="140" id="command2" clip-path="url(#commandClip2)">loading profile...100%</text>
+      <defs>
+        <clipPath id="commandClip2">
+          <rect x="100" y="125" width="1000" height="20" />
+        </clipPath>
+      </defs>
+      
+      <!-- Output for command 2 -->
+      <text class="output" x="330" y="140" id="output2-line1">done!</text>
+      
+      <!-- Command line 3 -->
+      <text class="prompt" x="40" y="180" id="prompt3">ebmw %</text>
+      <text class="command" x="100" y="180" id="command3" clip-path="url(#commandClip3)">whoami</text>
+      <defs>
+        <clipPath id="commandClip3">
+          <rect x="100" y="165" width="1000" height="20" />
+        </clipPath>
+      </defs>
+      
+      <!-- Output for command 3 -->
+      <text class="output" x="40" y="220" id="output3-line1">Khentache Hamza Abderaouf</text>
+      
+      <!-- Command line 4 -->
+      <text class="prompt" x="40" y="260" id="prompt4">ebmw %</text>
+      <text class="command" x="100" y="260" id="command4" clip-path="url(#commandClip4)">fun_facts</text>
+      <defs>
+        <clipPath id="commandClip4">
+          <rect x="100" y="245" width="1000" height="20" />
+        </clipPath>
+      </defs>
+      
+      <!-- Output for command 4 -->
+      <text class="output" x="40" y="300" id="output4-line1">🎮 I love anime, AI, and solving coding challenges!</text>
+      
+      <!-- Command line 5 -->
+      <text class="prompt" x="40" y="340" id="prompt5">ebmw %</text>
+      <text class="command" x="100" y="340" id="command5" clip-path="url(#commandClip5)">say_Hello</text>
+      <defs>
+        <clipPath id="commandClip5">
+          <rect x="100" y="325" width="1000" height="20" />
+        </clipPath>
+      </defs>
+      
+      <!-- Output for command 5 -->
+      <text class="output" x="40" y="380" id="output5-line1">email : Khentacheabderaouf@gmail.com</text>
+      
+      <!-- Command line 6 -->
+      <text class="prompt" x="40" y="420" id="prompt6">ebmw %</text>
+      <text class="command" x="100" y="420" id="command6" clip-path="url(#commandClip6)">logout</text>
+      <defs>
+        <clipPath id="commandClip6">
+          <rect x="100" y="405" width="1000" height="20" />
+        </clipPath>
+      </defs>
+      
+      <!-- Output for command 6 -->
+      <text class="output" x="40" y="460" id="output6-line1">👋 Goodbye!</text>
+    </g>
+      
+    <!-- Cursors -->
+    <rect id="cursor1" class="cursor" x="100" y="88" width="10" height="20" />
+    <rect id="cursor2" class="cursor" x="100" y="128" width="10" height="20" />
+    <rect id="cursor3" class="cursor" x="100" y="168" width="10" height="20" />
+    <rect id="cursor4" class="cursor" x="100" y="248" width="10" height="20" />
+    <rect id="cursor5" class="cursor" x="100" y="328" width="10" height="20" />
+    <rect id="cursor6" class="cursor" x="100" y="408" width="10" height="20" />
+    
+    <g id="Header" clip-path="url(#clip0_1_3)">
+      <g id="Background" filter="url(#filter1_d_1_3)">
+        <path d="M10 16C10 11.5817 13.5817 8 18 8H962C966.418 8 970 11.5817 970 16V56H10V16Z" fill="#F5F5F5"/>
+      </g>
+      <text id="terminal-title" x="490" y="40" text-anchor="middle" fill="#1A1A1A" font-family="Monaco" font-size="16">Terminal</text>
+      <g id="Buttons" clip-path="url(#clip1_1_3)">
+        <circle id="Ellipse 1" cx="33" cy="32" r="8" fill="#D83B3B"/>
+        <circle id="Ellipse 2" cx="57" cy="32" r="8" fill="#E2C423"/>
+        <circle id="Ellipse 3" cx="81" cy="32" r="8" fill="#03CA0B"/>
+      </g>
+    </g>
+  </g>
+  <defs>
+    <filter id="filter0_d_1_3" x="0" y="0" width="980" height="620" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="2"/>
+      <feGaussianBlur stdDeviation="5"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3" result="shape"/>
+    </filter>
+    <filter id="filter1_d_1_3" x="10" y="8" width="960" height="49" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="1"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.825 0 0 0 0 0.825 0 0 0 0 0.825 0 0 0 1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3" result="shape"/>
+    </filter>
+    <clipPath id="clip0_1_3">
+      <rect x="10" y="8" width="960" height="48" fill="white"/>
+    </clipPath>
+    <clipPath id="clip1_1_3">
+      <rect x="25" y="24" width="64" height="16" rx="8" fill="white"/>
+    </clipPath>
+    <clipPath id="commandClip1">
+      <rect x="100" y="85" width="1000" height="20" />
+    </clipPath>
+    <clipPath id="commandClip2">
+      <rect x="100" y="125" width="1000" height="20" />
+    </clipPath>
+    <clipPath id="commandClip3">
+      <rect x="100" y="165" width="1000" height="20" />
+    </clipPath>
+    <clipPath id="commandClip4">
+      <rect x="100" y="245" width="1000" height="20" />
+    </clipPath>
+    <clipPath id="commandClip5">
+      <rect x="100" y="325" width="1000" height="20" />
+    </clipPath>
+    <clipPath id="commandClip6">
+      <rect x="100" y="405" width="1000" height="20" />
+    </clipPath>
+  </defs>
+</svg>
