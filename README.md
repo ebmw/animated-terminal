@@ -8,7 +8,7 @@ An animated terminal SVG for your GitHub profile README that simulates a command
 
 
 ### Looping Animation
-![Animated Terminal (Looping)](https://raw.githubusercontent.com/ebmw/animated-terminal/main/animated-terminal-loop.svg)
+![Animated Terminal (Looping)](https://raw.githubusercontent.com/ebmw/animated-terminal/refs/heads/main/animated-terminal-loop%20.svg)
 
 ### One-time Playthrough
 ![Animated Terminal (One-time)](https://raw.githubusercontent.com/ebmw/animated-terminal/main/animated-terminal1.svg)
